@@ -24,8 +24,12 @@ int32_t main(void)
         {
             for (auto &it : arr)
                 if (it % 2 == 0)
+                {
                     ans = 0;
-            ans = 1;
+                    break;
+                }
+                else
+                    ans = 1;
         }
         else if (k == 3)
         {
@@ -46,7 +50,7 @@ int32_t main(void)
                 else
                 {
                     odd++;
-                    diff = min(diff, 4 - it % 3);
+                    diff = min(diff, 4 - it % 4);
                 }
             if (even >= 2)
                 ans = 0;
