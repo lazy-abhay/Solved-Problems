@@ -13,7 +13,7 @@ int32_t main(void)
 
     auto abhay = [&](int __t) -> void
     {
-        int n, r, b;
+        int n, r, b; 
         cin >> n >> r >> b;
         int x = r / (b + 1);
         int y = r % (b + 1);
